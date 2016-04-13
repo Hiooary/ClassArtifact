@@ -11,17 +11,18 @@
 var allInputs = document.getElementsByTagName("input");
 for (var i = 0, max = allInputs.length; i < max; i++)
 { 
-	if (allInputs[i].type === 'checkbox') 		allInputs[i].checked = true; 
+	if (allInputs[i].type === 'checkbox') 		
+		allInputs[i].checked = true; 
 }
 
 //then textarea should be checked，and input verification code
 
 //After entering the verification code, the button should be clicked.
 
- var allInputs = document.getElementsByTagName("button"); 
-for (var i = 0, max = allInputs.length; i < max; i++)
+var allButtons = document.getElementsByTagName("button"); 
+for (var i = 0, max = allButtons.length; i < max; i++)
 { 
-	if (allInputs[i].type === 'button') 
+	if (allButtons[i].type === 'button') 
         
-		$(allInputs[i]).click();
+		$(allButtons[i]).click();
  }
