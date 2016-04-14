@@ -1,12 +1,12 @@
-//open the URL
+/******* open the URL ********/
 
-//Refresh the page until the check box appears
+/************ Refresh the page until the check box appears ***************/
 
 
 
-//then all check boxs  are checked or select which you want
-//Use the drop-down list to select the corresponding check box
-//If you do better, you can also choose a different date check box.
+/******** then all check boxs  are checked or select which you want    ******   
+********* Use the drop-down list to select the corresponding check box   *******
+********* If you do better, you can also choose a different date check box. *******/
 
 var allInputs = document.getElementsByTagName("input");
 for (var i = 0, max = allInputs.length; i < max; i++)
@@ -15,8 +15,8 @@ for (var i = 0, max = allInputs.length; i < max; i++)
 		allInputs[i].checked = true; 
 }
 
-//then textarea should be checked，and input verification code
-//J_remark
+/******* then textarea should be checked，and input verification code ******/
+/******* J_remark ******/
 var allInputs = document.getElementsByTagName("textarea");
 for (var i = 0, max = allInputs.length; i < max; i++)
 
@@ -30,7 +30,7 @@ for (var i = 0, max = allInputs.length; i < max; i++)
 }
 
 
-//After entering the verification code, the button should be clicked.
+/*******  After entering the verification code, the button should be clicked. ********/
 
 var allButtons = document.getElementsByTagName("button"); //数组
 for (var i = 0, max = allButtons.length; i < max; i++)
@@ -40,7 +40,7 @@ for (var i = 0, max = allButtons.length; i < max; i++)
 		$(allButtons[i]).click();
  }
 
-// Automatically confirmed by enter. Better than the method above.
+/****** Automatically confirmed by enter. Better than the method above. ********/
 document.onkeydown=function(event)
 {
 	e = event ? event : (window.event ? window.event : null);
@@ -54,3 +54,4 @@ document.onkeydown=function(event)
 	// }
 	}	
 }
+/****** Best able to convert to.Exe format *****/
