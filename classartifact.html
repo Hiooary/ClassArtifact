@@ -16,13 +16,41 @@ for (var i = 0, max = allInputs.length; i < max; i++)
 }
 
 //then textarea should be checked，and input verification code
+//J_remark
+var allInputs = document.getElementsByTagName("textarea");
+for (var i = 0, max = allInputs.length; i < max; i++)
+
+{ 
+	if (allInputs[i].type === 'textarea') 
+ 	//$(allInputs[i]).blur();
+	//$(allInputs[i]).focus();
+        allInputs[i].onfocus = true; 
+        //allInputs[i].select();          
+        //allInputs[i].value = "123";     //Text assignment
+}
+
 
 //After entering the verification code, the button should be clicked.
 
-var allButtons = document.getElementsByTagName("button"); 
+var allButtons = document.getElementsByTagName("button"); //数组
 for (var i = 0, max = allButtons.length; i < max; i++)
 { 
 	if (allButtons[i].type === 'button') 
         
 		$(allButtons[i]).click();
  }
+
+// Automatically confirmed by enter. Better than the method above.
+document.onkeydown=function(event)
+{
+	e = event ? event : (window.event ? window.event : null);
+	if(e.keyCode==13){
+
+	//for (var i = 0, max = allInputs.length; i < max; i++)
+	//	
+	//if (allInputs.type === 'button') 
+       
+		document.getElementById("J_submit").click();
+	// }
+	}	
+}
